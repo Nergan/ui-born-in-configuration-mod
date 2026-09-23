@@ -34,9 +34,6 @@ public abstract class RandomSpreadPlacementMixin {
     public abstract int separation();
 
     @Shadow
-    public abstract int salt();
-
-    @Shadow
     public abstract RandomSpreadType spreadType();
 
     @Inject(method = "isPlacementChunk", at = @At("HEAD"), cancellable = true)
@@ -68,7 +65,7 @@ public abstract class RandomSpreadPlacementMixin {
         int regionX = Math.floorDiv(chunkX, spacing);
         int regionZ = Math.floorDiv(chunkZ, spacing);
         WorldgenRandom random = new WorldgenRandom(new LegacyRandomSource(0L));
-        random.setLargeFeatureWithSalt(seed, regionX, regionZ, salt());
+        random.setLargeFeatureWithSalt(seed, regionX, regionZ, ((StructurePlacementAccessor) (Object) this).uibic$salt());
         int spread = spacing - separation;
         int offsetX = spreadType().evaluate((RandomSource) random, spread);
         int offsetZ = spreadType().evaluate((RandomSource) random, spread);
