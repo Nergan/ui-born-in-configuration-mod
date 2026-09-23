@@ -179,6 +179,9 @@ jobs:
             Minecraft 1.21.1 / NeoForge. UI for Born in Configuration ${{ steps.versions.outputs.mod_version }}.
           loaders: |
             neoforge
+          # server_only: только сервер, подпункт «works in singleplayer».
+          # dedicated-server одиночную игру как раз выключает.
+          environment: server
           game-versions: |
             1.21.1
           java: |
