@@ -1,0 +1,63 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+
+license = "${mod_license}"
+issueTrackerURL = "https://github.com/Nergan/ui-born-in-configuration-mod/issues"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+displayURL = "https://github.com/Nergan/ui-born-in-configuration-mod"
+authors = "${mod_authors}"
+description = '''
+${mod_description}
+
+In-game config screen for Born in Chaos and Born in Configuration, plus spawn and structure rates.
+Экран настроек Born in Chaos и Born in Configuration, плюс частота спавна и структур.
+'''
+
+[[mixins]]
+config = "${mod_id}.mixins.json"
+
+[[dependencies.${mod_id}]]
+modId = "neoforge"
+type = "required"
+versionRange = "[${neo_version},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "kotlinforforge"
+type = "required"
+versionRange = "${kff_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "born_in_chaos_v1"
+type = "required"
+versionRange = "${chaos_version_range}"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "borninconfiguration"
+type = "required"
+versionRange = "${bic_version_range}"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "geckolib"
+type = "required"
+versionRange = "${geckolib_version_range}"
+ordering = "NONE"
+side = "BOTH"
