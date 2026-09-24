@@ -69,4 +69,4 @@ Workflow релиза собирает аддон и забирает чужие
 
 ## Лицензия
 
-Код аддона — [MIT](LICENSE). Born in Chaos распространяется на условиях All Rights Reserved. Born in Configuration и GeckoLib — MIT. Kotlin for Forge — LGPL-2.1. Ванильные ассеты Minecraft в дистрибутив не входят.
+Код аддона — [MPL-2.0](LICENSE). Born in Chaos распространяется на условиях All Rights Reserved. Born in Configuration и GeckoLib — MIT. Kotlin for Forge — LGPL-2.1. Ванильные ассеты Minecraft в дистрибутив не входят.

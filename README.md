@@ -69,4 +69,4 @@ Dedicated server: `world/serverconfig/uiborninconfiguration-server.toml`. This i
 
 ## License
 
-The addon code is [MIT](LICENSE). Born in Chaos is All Rights Reserved. Born in Configuration and GeckoLib are MIT. Kotlin for Forge is LGPL-2.1. Vanilla Minecraft assets are not shipped.
+The addon code is [MPL-2.0](LICENSE). Born in Chaos is All Rights Reserved. Born in Configuration and GeckoLib are MIT. Kotlin for Forge is LGPL-2.1. Vanilla Minecraft assets are not shipped.
