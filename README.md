@@ -12,13 +12,13 @@ Jars live on [GitHub Releases](https://github.com/Nergan/ui-born-in-configuratio
 
 Download these files and put them in the `mods` folder:
 
-| File | Required | What it is |
-| --- | --- | --- |
-| `uiborninconfiguration-1.0.0.jar` | Yes | this addon |
-| `kotlinforforge-5.8.0-all.jar` | Yes | [Kotlin for Forge](https://modrinth.com/mod/kotlin-for-forge) |
-| `born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar` | Yes | [Born in Chaos](https://modrinth.com/mod/borninchaos) |
-| `borninconfiguration-3.2.2.jar` | Yes | [Born in Configuration](https://modrinth.com/mod/born-in-configuration) |
-| `geckolib-neoforge-1.21.1-4.7.6.jar` | Yes | [GeckoLib](https://modrinth.com/mod/geckolib), required by Born in Chaos |
+| File                                        | Required | What it is                                                               |
+| ------------------------------------------- | -------- | ------------------------------------------------------------------------ |
+| `uiborninconfiguration-1.0.0.jar`           | Yes      | this addon                                                               |
+| `kotlinforforge-5.8.0-all.jar`              | Yes      | [Kotlin for Forge](https://modrinth.com/mod/kotlin-for-forge)            |
+| `born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar` | Yes      | [Born in Chaos](https://modrinth.com/mod/borninchaos)                    |
+| `borninconfiguration-3.2.2.jar`             | Yes      | [Born in Configuration](https://modrinth.com/mod/born-in-configuration)  |
+| `geckolib-neoforge-1.21.1-4.7.6.jar`        | Yes      | [GeckoLib](https://modrinth.com/mod/geckolib), required by Born in Chaos |
 
 The release workflow builds the addon and fetches the companion jars from Modrinth. GitHub shows a SHA-256 digest next to each file on the release page. Do not install `*-sources.jar`.
 
@@ -32,15 +32,15 @@ The release workflow builds the addon and fetches the companion jars from Modrin
 
 ## Requirements
 
-| Component | Version |
-| --- | --- |
-| Minecraft | 1.21.1 |
-| NeoForge | 21.1.209 (any 21.1.x should work) |
-| Kotlin for Forge | 5.8.0, **NeoForge** build |
-| Born in Chaos | 1.7.6 (NeoForge 1.21.1) |
-| Born in Configuration | 3.2.2 |
-| GeckoLib | 4.7.6 (NeoForge 1.21.1) |
-| Java | 21 |
+| Component             | Version                           |
+| --------------------- | --------------------------------- |
+| Minecraft             | 1.21.1                            |
+| NeoForge              | 21.1.209 (any 21.1.x should work) |
+| Kotlin for Forge      | 5.8.0, **NeoForge** build         |
+| Born in Chaos         | 1.7.6 (NeoForge 1.21.1)           |
+| Born in Configuration | 3.2.2                             |
+| GeckoLib              | 4.7.6 (NeoForge 1.21.1)           |
+| Java                  | 21                                |
 
 ## Installation
 
@@ -60,13 +60,15 @@ World file: `saves/<world>/serverconfig/uiborninconfiguration-server.toml`.
 
 Dedicated server: `world/serverconfig/uiborninconfiguration-server.toml`. This is a `SERVER` config: the server owns the values and syncs them to clients. Born in Configuration keeps its own server file; this menu edits both.
 
-| Option | Default | Meaning |
-| --- | --- | --- |
-| `spawn_multiplier` | `1.0` | Global Born in Chaos spawn rate (`0`..`8`) |
-| `spawning.mobs.<id>` | `1.0` | Extra rate for one mob |
-| `structure_frequency` | `1.0` | Global structure rate for new chunks (`0`..`8`) |
-| `structures.groups.<id>` | `1.0` | Extra rate for one structure group |
+| Option                   | Default | Meaning                                         |
+| ------------------------ | ------- | ----------------------------------------------- |
+| `spawn_multiplier`       | `1.0`   | Global Born in Chaos spawn rate (`0`..`8`)      |
+| `spawning.mobs.<id>`     | `1.0`   | Extra rate for one mob                          |
+| `structure_frequency`    | `1.0`   | Global structure rate for new chunks (`0`..`8`) |
+| `structures.groups.<id>` | `1.0`   | Extra rate for one structure group              |
 
 ## License
 
 The addon code is [MPL-2.0](LICENSE). Born in Chaos is All Rights Reserved. Born in Configuration and GeckoLib are MIT. Kotlin for Forge is LGPL-2.1. Vanilla Minecraft assets are not shipped.
+
+ 
