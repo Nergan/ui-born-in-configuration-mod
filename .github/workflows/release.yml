@@ -93,7 +93,7 @@ jobs:
               *) cp -v "${jar}" release-assets/ ;;
             esac
           done
-          test -f "release-assets/uiborninconfiguration-${{ steps.versions.outputs.mod_version }}.jar"
+          test -f "release-assets/uiborninconfiguration-neoforge-1.21.1-${{ steps.versions.outputs.mod_version }}.jar"
           chmod +x .github/scripts/fetch-companion-jars.sh
           .github/scripts/fetch-companion-jars.sh \
             release-assets \
@@ -146,7 +146,7 @@ jobs:
 
             | File | Required | Source |
             | --- | --- | --- |
-            | `uiborninconfiguration-${{ steps.versions.outputs.mod_version }}.jar` | Yes | this addon |
+            | `uiborninconfiguration-neoforge-1.21.1-${{ steps.versions.outputs.mod_version }}.jar` | Yes | this addon |
             | `kotlinforforge-${{ steps.versions.outputs.kff_version }}-all.jar` | Yes | [Kotlin for Forge](https://modrinth.com/mod/kotlin-for-forge) (LGPL-2.1) |
             | `born_in_chaos_[Neoforge]_1.21.1_${{ steps.versions.outputs.chaos_version }}.jar` | Yes | [Born in Chaos](https://modrinth.com/mod/borninchaos) (All Rights Reserved) |
             | `borninconfiguration-${{ steps.versions.outputs.bic_version }}.jar` | Yes | [Born in Configuration](https://modrinth.com/mod/born-in-configuration) (MIT) |
@@ -198,7 +198,7 @@ jobs:
             1.21.1
           java: |
             21
-          files: release-assets/uiborninconfiguration-${{ steps.versions.outputs.mod_version }}.jar
+          files: release-assets/uiborninconfiguration-neoforge-1.21.1-${{ steps.versions.outputs.mod_version }}.jar
           dependencies: |
             kotlin-for-forge(required){modrinth:ordsPcFz}
             borninchaos(required){modrinth:1kcHy4de}
@@ -212,6 +212,17 @@ jobs:
         run: |
           set -euo pipefail
           python3 .github/scripts/replace-modrinth-versions.py --finish release-assets/modrinth-delete-after-publish.txt
+
+      - name: Update Modrinth description
+        env:
+          MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [[ -z "${MODRINTH_TOKEN}" ]]; then
+            echo "MODRINTH_TOKEN is empty. The Modrinth page will not be updated."
+            exit 0
+          fi
+          python3 .github/scripts/update-modrinth-body.py ui-born-in-configuration modrinth.md
 
       - name: Set up Node.js
         if: github.event_name == 'workflow_dispatch' || github.ref == 'refs/heads/main'
@@ -239,7 +250,7 @@ jobs:
             fi
             printf '%s\n' "${matches[0]}"
           }
-          mod_jar="$(one 'release-assets/uiborninconfiguration-*.jar')"
+          mod_jar="$(one 'release-assets/uiborninconfiguration-neoforge-1.21.1-*.jar')"
           kff_jar="$(one 'release-assets/kotlinforforge-*.jar')"
           chaos_jar="$(one 'release-assets/born_in_chaos_*.jar')"
           bic_jar="$(one 'release-assets/borninconfiguration-*.jar')"

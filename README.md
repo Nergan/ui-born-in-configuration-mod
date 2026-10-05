@@ -2,7 +2,7 @@
 
 **[English](README.md)** · **[Русский](README.ru.md)**
 
-A **Minecraft 1.21.1** NeoForge addon for [Born in Chaos](https://modrinth.com/mod/borninchaos) and [Born in Configuration](https://modrinth.com/mod/born-in-configuration). It opens one in-game settings menu from the Config button of all three mods, and adds spawn and structure rates on top of the Born in Configuration options. Written in Kotlin with [Kotlin for Forge](https://modrinth.com/mod/kotlin-for-forge).
+A **Minecraft 1.21.1** NeoForge addon for [Born in Chaos](https://modrinth.com/mod/borninchaos) and [Born in Configuration](https://modrinth.com/mod/born-in-configuration). It opens one in-game settings menu from the Config button of all three mods, and adds spawn and structure rates on top of the Born in Configuration options. Written in Kotlin with [Kotlin for Forge](https://modrinth.com/mod/kotlin-for-forge). There is no Fabric build: those two mods do not publish the Fabric jars this addon would need.
 
 The menu follows the client language (English and Russian).
 
@@ -14,7 +14,7 @@ Download these files and put them in the `mods` folder:
 
 | File                                        | Required | What it is                                                               |
 | ------------------------------------------- | -------- | ------------------------------------------------------------------------ |
-| `uiborninconfiguration-1.0.0.jar`           | Yes      | this addon                                                               |
+| `uiborninconfiguration-neoforge-1.21.1-1.0.0.jar` | Yes | this addon |
 | `kotlinforforge-5.8.0-all.jar`              | Yes      | [Kotlin for Forge](https://modrinth.com/mod/kotlin-for-forge)            |
 | `born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar` | Yes      | [Born in Chaos](https://modrinth.com/mod/borninchaos)                    |
 | `borninconfiguration-3.2.2.jar`             | Yes      | [Born in Configuration](https://modrinth.com/mod/born-in-configuration)  |

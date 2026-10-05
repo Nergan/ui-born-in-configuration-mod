@@ -2,7 +2,7 @@
 
 **[English](README.md)** · **[Русский](README.ru.md)**
 
-Аддон для **Minecraft 1.21.1** (NeoForge) к модам [Born in Chaos](https://modrinth.com/mod/borninchaos) и [Born in Configuration](https://modrinth.com/mod/born-in-configuration). Одна кнопка Config у всех трёх модов открывает одно меню настроек, а к параметрам Born in Configuration добавляются частота спавна и структур. Написан на Kotlin через [Kotlin for Forge](https://modrinth.com/mod/kotlin-for-forge).
+Аддон для **Minecraft 1.21.1** (NeoForge) к модам [Born in Chaos](https://modrinth.com/mod/borninchaos) и [Born in Configuration](https://modrinth.com/mod/born-in-configuration). Одна кнопка Config у всех трёх модов открывает одно меню настроек, а к параметрам Born in Configuration добавляются частота спавна и структур. Написан на Kotlin через [Kotlin for Forge](https://modrinth.com/mod/kotlin-for-forge). Fabric-сборки нет: у этих двух модов нет Fabric-jar, от которых аддон мог бы зависеть.
 
 Язык меню берётся из клиента (английский и русский).
 
@@ -14,7 +14,7 @@
 
 | Файл | Обязателен | Что это |
 | --- | --- | --- |
-| `uiborninconfiguration-1.0.0.jar` | Да | этот аддон |
+| `uiborninconfiguration-neoforge-1.21.1-1.0.0.jar` | Да | этот аддон |
 | `kotlinforforge-5.8.0-all.jar` | Да | [Kotlin for Forge](https://modrinth.com/mod/kotlin-for-forge) |
 | `born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar` | Да | [Born in Chaos](https://modrinth.com/mod/borninchaos) |
 | `borninconfiguration-3.2.2.jar` | Да | [Born in Configuration](https://modrinth.com/mod/born-in-configuration) |
