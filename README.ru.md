@@ -8,7 +8,7 @@
 
 ## Загрузки
 
-Готовые jar лежат в [GitHub Releases](https://github.com/Nergan/ui-born-in-configuration-mod/releases/latest). Пуш в `main` обновляет файлы текущего релиза и публикует аддон на [Modrinth](https://modrinth.com/project/ui-born-in-configuration).
+Готовые jar лежат в [GitHub Releases](https://github.com/Nergan/ui-born-in-configuration-mod/releases/latest). Пуш в `main` обновляет страницу GitHub Release для Minecraft 1.21.1 NeoForge, включая `all-jars.zip`, и публикует аддон на [Modrinth](https://modrinth.com/project/ui-born-in-configuration).
 
 Скачайте эти файлы и положите в папку `mods`:
 

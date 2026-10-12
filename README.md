@@ -8,7 +8,7 @@ The menu follows the client language (English and Russian).
 
 ## Downloads
 
-Jars live on [GitHub Releases](https://github.com/Nergan/ui-born-in-configuration-mod/releases/latest). A push to `main` updates the files on the current version’s release and publishes the addon to [Modrinth](https://modrinth.com/project/ui-born-in-configuration).
+Jars live on [GitHub Releases](https://github.com/Nergan/ui-born-in-configuration-mod/releases/latest). A push to `main` updates the GitHub Release page for Minecraft 1.21.1 NeoForge, including `all-jars.zip`, and publishes the addon to [Modrinth](https://modrinth.com/project/ui-born-in-configuration).
 
 Download these files and put them in the `mods` folder:
 
